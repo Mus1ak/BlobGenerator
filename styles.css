@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #E1AEFF;
+}
+
+h1{
+    margin-bottom: 10px;
+    color: #a0a0b0;
+    text-align: center;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.main {
+    /* background-image: linear-gradient(#44a2f0, #FF78C4); */
+    background-color: #fff;
+    min-width: 45vw;
+    min-height: 65vh;
+    padding: 30px;
+    border-radius: 8px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.screen {
+    background-color: #eef3f8;
+    min-width: 50vw;
+    max-height: 55vh;
+    padding: 20px 0;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px;
+    display: grid;
+    place-items: center;
+}
+
+.dimensions {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-around;
+    margin: 10px 0 10px 0;
+    text-align: center;
+}
+
+@media (max-width:800px) {
+    .dimensions {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+}
+
+input[type='number'] {
+    height: 40px;
+    width: 80px;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #a0a0b0;
+    border-radius: 3px;
+}
+
+input[type='number']:focus {
+    outline: none;
+}
+
+.slider {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+input[type="text"] {
+    min-width: 100%;
+    margin: 25px 0;
+    padding: 10px;
+    border-radius: 3px;
+    background-color: #f1eff6;
+    border: none;
+    height: 50px;
+}
+
+button {
+    width: 12vh;
+    min-height: 5vh;
+    padding: 10px 0;
+    background-color: #FF78C4;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    color: #fff;
+
+    transition: background-color, transform 0.3s ease;
+}
+
+#blob {
+    height: 300px;
+    width: 300px;
+    background-image: linear-gradient(#44a2f0, #FF78C4);
+    box-shadow: 15px 20px 30px rgb(0, 0, 0, 0.15);
+}
+
+
+/*  */
+input[type=range] {
+    /* margin-bottom: 5px; */
+    width: 90%;
+    height: 25px;
+}
+
+button:hover {
+    background-color: #a0a0b0;
+    transform: translate(5px, -5px);
+}
+
+input[type="text"]:focus {
+    border: 1px solid #3222;
+    outline: none;
+}
